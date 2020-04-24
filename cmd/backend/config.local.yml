@@ -1,0 +1,15 @@
+server:
+  name: backend-service
+  port: :8080
+  read_timeout: 10
+  write_timeout: 5
+  dry_run: false
+
+database:
+  filename: $APP_HOME/blog.db
+
+template:
+  base_location: $APP_HOME/templates
+  processed_ok: $APP_HOME/templates/ok
+  processed_error: $APP_HOME/templates/error
+  check_cycle: 15
